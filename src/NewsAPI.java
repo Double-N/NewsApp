@@ -10,6 +10,8 @@ public class NewsAPI {
 		NewsAPI getter = new NewsAPI("1d4fcf0134bf40cbab629a9012f10e09");
 		System.out.println(getter.getArticlesFromSource("cnn"));
 
+		WebParseAPI articler = new WebParseAPI();
+		System.out.println(articler.getData("http://www.bbc.com/news/election-us-2016-37963965"));
 	}
 
 	protected String APIKEY;
